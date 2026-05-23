@@ -35,7 +35,7 @@ void draw() {
     dibujarGrafica(x, y, anchoBarras, lecturas[i]);
   }
 
-calcularPromedio(lecturas[cantidad], cantidad);
+calcularPromedio(lecturas[cantidad]);
 }
 
 void dibujarGrafica(float x, float y, float w, int h) {
@@ -43,7 +43,7 @@ void dibujarGrafica(float x, float y, float w, int h) {
   rect(x, y, w, h);
 }
 
-void calcularPromedio(int lecturas[], int cantidad) {
+void calcularPromedio(int [] lecturas) {
 
   float contador = 0;
   float resultado = 0;
